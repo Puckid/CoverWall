@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSpinBox" name="widthSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>3</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>16</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="heightSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>23</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>9</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="heightLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>25</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>height</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="widthLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pixelsLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>45</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>pixels</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="pixelsSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>43</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>120</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bigLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>65</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>big</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bigSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>63</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>2</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nBigLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>85</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>N° big</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="nBigSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>83</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="value">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>5</y>
+      <width>1176</width>
+      <height>710</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="msgLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>670</y>
+      <width>90</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>105</y>
+      <width>42</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>img w:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>125</y>
+      <width>42</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>img h:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgwLabel">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>105</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9999</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imghLabel">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>125</y>
+      <width>40</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9999</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>145</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>185</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="GLabel">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>165</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>G</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="RSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>143</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="GSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>163</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="BSpin">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>183</y>
+      <width>47</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="colorView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>205</y>
+      <width>99</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
