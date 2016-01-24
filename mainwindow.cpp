@@ -153,6 +153,10 @@ void MainWindow::start()
 {
     QStringList nameFilter("*.png");
     nameFilter<<"*.jpg";
+    nameFilter<<"*.jpeg";
+    nameFilter<<"*.PNG";
+    nameFilter<<"*.JPG";
+    nameFilter<<"*.JPEG";
     QDir dir(QUrl("./img").toString());
     QDir dirBest(QUrl("./img/best").toString());
     QStringList bestFiles = dirBest.entryList(nameFilter);
@@ -469,10 +473,10 @@ void MainWindow::start()
             }
         }
     }
-    // right        NOT WOKRING
+    // right
     matCorner = Mat(1,2,CV_8UC1);
     matCorner.at<char>(0,0) = blank;
-    matCorner.at<char>(1,0) = full;
+    matCorner.at<char>(0,1) = full;
     for(int i = 0; i<state.cols-1; i++)
     {
         for(int j= 0; j<state.rows; j++)
@@ -502,10 +506,10 @@ void MainWindow::start()
             }
         }
     }
-    // left             NOT WORKING
+    // left
     matCorner = Mat(1,2,CV_8UC1);
     matCorner.at<char>(0,0) = full;
-    matCorner.at<char>(1,0) = blank;
+    matCorner.at<char>(0,1) = blank;
     for(int i = 0; i<state.cols-1; i++)
     {
         for(int j= 0; j<state.rows; j++)
